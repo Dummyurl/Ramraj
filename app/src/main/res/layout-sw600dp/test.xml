@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/idpayment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:background="@drawable/shoppingcart"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Product, No Results."
+                android:id="@+id/textView16"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You need to add something to your cart"
+                android:id="@+id/textView17"
+                android:layout_below="@+id/textView16"
+                android:textSize="30dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK TO SHOPPING"
+                android:id="@+id/btnshop"
+                android:layout_marginTop="100dp"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:background="#d0691b"
+                android:padding="15dp"
+                android:layout_below="@+id/textView17"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

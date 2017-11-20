@@ -1,0 +1,68 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/idcart"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+   <!-- <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:background="@drawable/background" ></RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        >
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            custom:selected_color="@color/btnactiveColor"
+            custom:unselected_color="#FFFFFF"
+            custom:shape="oval"
+            custom:selected_padding_left="3dp"
+            custom:selected_padding_right="3dp"
+            custom:unselected_padding_left="3dp"
+            custom:unselected_padding_right="3dp"
+            custom:selected_width="15dp"
+            custom:selected_height="15dp"
+            custom:unselected_width="10dp"
+            custom:unselected_height="10dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="20dp"
+            android:layout_alignParentBottom="true"
+            style="@style/AndroidImageSlider_Magnifier_Oval_Black"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorfooter">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET STARTED"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#000000"
+            android:background="@null"
+            android:onClick="start"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

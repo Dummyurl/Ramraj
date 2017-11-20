@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Ramraj</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="starred_string">Starred</string>
+    <string name="inbox_string">Inbox</string>
+    <string name="sent_mail_string">Sent mail</string>
+    <string name="draft_string">Drafts</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">Trash</string>
+    <string name="all_mail_string">All mails</string>
+    <string name="spam_string">Spams</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+
+    <string name="account"><font fgcolor="white">ACCOUNT</font></string>
+    <string name="cart"><font fgcolor="white">CART</font></string>
+    <string name="order"><font fgcolor="white">ORDER</font></string>
+    <string name="categories"><font fgcolor="white">CATEGORIES</font></string>
+    <string name="recent"><font fgcolor="white">RECENTS</font></string>
+    <string name="featured"><font fgcolor="white">FEATURED</font></string>
+    <string name="all"><font fgcolor="white">ALL</font></string>
+    <string name="settings"><font fgcolor="white">SETTINGS</font></string>
+    <string name="logout"><font fgcolor="white">LOG OUT</font></string>
+    <string name="some_text">The next word is <font fgcolor="white">red</font> but that is all</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_splash">Splash</string>
+
+    <string name="url">http://www.puyangan.com/ramraj</string>
+    <string name="title_activity_account">Account</string>
+    <string name="title_activity_order">Order</string>
+    <string name="dummydata">In Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.</string>
+    <string name="termcondition">I’ve read and accept the terms &amp; conditions</string>
+    <string name="str1">\"Sign Up\"</string>
+    <string name="str2">Terms of Use</string>
+    <string name="str3">Privacy Policy</string>
+</resources>

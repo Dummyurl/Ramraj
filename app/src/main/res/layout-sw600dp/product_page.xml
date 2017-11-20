@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/idproduct" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/btncategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+              android:layout_marginLeft="20dp"
+            android:text="CATEGORIES"
+            android:textColor="#d0691b"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnrecents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btncategory"
+            android:background="@null"
+            android:text="RECENTS"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnfeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btnrecents"
+            android:background="@null"
+            android:text="FEATURED"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnfeature"
+            android:background="@null"
+            android:padding="0dp"
+            android:text="ALL"
+              android:layout_marginLeft="20dp"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_above="@+id/rlbottom" 
+        android:layout_marginBottom="10dp">
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swipyrefreshlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srl_direction="bottom">
+
+            <GridView
+                android:id="@+id/productlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:verticalSpacing="5dp"
+                >
+            </GridView>
+
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No any product in this category"
+            android:id="@+id/emptylist"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    android:background="@color/colorfooter" >
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/round_button"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt11"
+            android:text="Store"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnvieworder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:text="VIEW ORDER"
+            android:textColor="#000000" />
+    </RelativeLayout>
+</RelativeLayout>

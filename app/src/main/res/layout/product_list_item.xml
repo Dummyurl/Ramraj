@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/viewtop"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:background="#ccc" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewtop"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="TextView" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_below="@+id/txtname" >
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/addtocart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cart" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/rl"
+        android:background="#ccc" />
+
+    <View
+        android:id="@+id/viewleft"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewbottom"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/viewtop"
+        android:background="#ccc" />
+
+    <View
+        android:id="@+id/viewright"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewbottom"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/viewtop"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rl"
+        android:layout_alignBottom="@+id/rl"
+        android:layout_alignLeft="@+id/rl"
+        android:layout_alignRight="@+id/rl" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:paddingTop="10dp"
+        android:singleLine="false"
+        android:text="SETTINGS"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:text="LOG OUT"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

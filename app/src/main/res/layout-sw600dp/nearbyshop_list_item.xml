@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgshop"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rlimage"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ramraj"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtname"
+            android:layout_marginTop="10dp"
+            android:text="Chandigarh"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtaddress"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtemail"
+            android:layout_marginTop="10dp"
+            android:text="Phone"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtemail"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/call" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
